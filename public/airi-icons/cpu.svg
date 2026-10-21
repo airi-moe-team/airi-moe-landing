@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Círculo de fondo negro -->
+  <circle cx="50" cy="50" r="48" fill="#000000" />
+  <!-- Cuerpo del Chip (blanco) -->
+  <rect x="25" y="25" width="50" height="50" rx="4" ry="4" fill="#ffffff" />
+  <!-- Núcleo central (calado en negro) -->
+  <rect x="35" y="35" width="30" height="30" rx="2" ry="2" fill="#000000" />
+  <!-- Pines (puntos/bloques blancos) -->
+  <g fill="#ffffff">
+    <!-- Arriba -->
+    <rect x="30" y="15" width="6" height="10" />
+    <rect x="42" y="15" width="6" height="10" />
+    <rect x="54" y="15" width="6" height="10" />
+    <rect x="66" y="15" width="6" height="10" />
+    <!-- Abajo -->
+    <rect x="30" y="75" width="6" height="10" />
+    <rect x="42" y="75" width="6" height="10" />
+    <rect x="54" y="75" width="6" height="10" />
+    <rect x="66" y="75" width="6" height="10" />
+    <!-- Izquierda -->
+    <rect x="15" y="30" width="10" height="6" />
+    <rect x="15" y="42" width="10" height="6" />
+    <rect x="15" y="54" width="10" height="6" />
+    <rect x="15" y="66" width="10" height="6" />
+    <!-- Derecha -->
+    <rect x="75" y="30" width="10" height="6" />
+    <rect x="75" y="42" width="10" height="6" />
+    <rect x="75" y="54" width="10" height="6" />
+    <rect x="75" y="66" width="10" height="6" />
+  </g>
+</svg>

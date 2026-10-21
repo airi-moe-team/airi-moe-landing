@@ -1,0 +1,133 @@
+{
+  "header": {
+    "brand": "Airi",
+    "nav": [
+      { "label": "Inicio", "path": "/" },
+      { "label": "Funcionalidades", "path": "/features" },
+      { "label": "Cómo funciona", "path": "/how-it-works" },
+      { "label": "Tecnología", "path": "/technology" },
+      { "label": "Privacidad", "path": "/privacy" }
+    ],
+    "lang": "Español"
+  },
+  "hero": {
+    "title": "Airi: Tu asistente conversacional inteligente",
+    "subtitle": "Conversaciones naturales, memoria persistente y experiencias memorables. Airi se adapta a ti.",
+    "ctaPrimary": "Empezar ahora",
+    "ctaSecondary": "Ver cómo funciona"
+  },
+  "features": {
+    "title": "Funcionalidades",
+    "description": "Todo lo que necesitas en una sola conversación",
+    "items": [
+      {
+        "title": "Conversación",
+        "description": "Converse como si fuera natural, con contexto y continuidad.",
+        "icon": "chat"
+      },
+      {
+        "title": "Afinidad",
+        "description": "Aire se adapta a tu estilo y preferences.",
+        "icon": "heart"
+      },
+      {
+        "title": "Memorias",
+        "description": "Recuerda conversaciones y detalles importantes.",
+        "icon": "bookmark"
+      },
+      {
+        "title": "Diario",
+        "description": "Mantén un registro de tu día con Airi.",
+        "icon": "journal"
+      },
+      {
+        "title": "Citas narrativas",
+        "description": "Crea historias y experiencias personales.",
+        "icon": "story"
+      },
+      {
+        "title": "Regalos",
+        "description": "Personaliza presentaciones y mensajes.",
+        "icon": "gift"
+      }
+    ]
+  },
+  "how-it-works": {
+    "title": "¿Cómo funciona Airi?",
+    "description": "Descubre el poder de una conversación inteligente",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Conecta",
+        "description": "Inicia conversaciones naturales y fluidas."
+      },
+      {
+        "step": 2,
+        "title": "Memoriza",
+        "description": "Aire recuerda detalles importantes para una experiencia más personalizada."
+      },
+      {
+        "step": 3,
+        "title": "Crea",
+        "description": "Genera contenido, historias y experiencias únicas."
+      }
+    ]
+  },
+  "technology": {
+    "title": "Nuestra tecnología",
+    "description": "Ejecución local y proveedores remotos",
+    "options": [
+      {
+        "title": "Ejecución local",
+        "description": "Modelos de lenguaje que ejecutan en tu dispositivo",
+        "privacy": "Sin datos que salgan de tu dispositivo"
+      },
+      {
+        "title": "Proveedores remotos",
+        "description": "Servicios de IA de alta precisión cuando es necesario",
+        "privacy": "Datos procesados según políticas de privacidad"
+      }
+    ]
+  },
+  "privacyIntro": {
+    "title": "Privacidad",
+    "description": "La privacidad es fundamental. Lee nuestra política completa."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "question": "¿Qué es Airi?",
+        "answer": "Airi es un bot conversacional de Discord impulsado por modelos de lenguaje, diseñado para ofrecer conversaciones naturales y memorables."
+      },
+      {
+        "question": "¿Es gratuito?",
+        "answer": "Airi está disponible en diferentes planes. Consulta nuestra página web para más información."
+      },
+      {
+        "question": "¿Cómo funciona la memoria?",
+        "answer": "Aire guarda conversaciones y detalles importantes en una base de datos segura para una experiencia más personalizada."
+      },
+      {
+        "question": "¿Mis datos son seguros?",
+        "answer": "Sí, seguimos estrictas políticas de seguridad y privacidad. Consulta nuestra política para detalles completos."
+      }
+    ]
+  },
+  "footer": {
+    "nav": [
+      { "label": "Inicio", "path": "/" },
+      { "label": "Funcionalidades", "path": "/features" },
+      { "label": "Privacidad", "path": "/privacy" }
+    ],
+    "links": [
+      { "label": "Política de privacidad", "path": "/privacy" },
+      { "label": "Términos de servicio", "path": "/terms" }
+    ],
+    "contact": "contacto@airi.example.com"
+  },
+  "ctaFinal": {
+    "title": "Únete a Airi hoy",
+    "description": "Empieza a tener conversaciones inteligentes y memorables."
+  }
+}
