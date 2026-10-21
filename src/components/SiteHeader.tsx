@@ -46,7 +46,7 @@ export function SiteHeader({ className = "mb-8" }: { className?: string }) {
             <Link
               key={href}
               href={href}
-              className="whitespace-nowrap text-gray-600 hover:text-black dark:text-gray-400 hover:text-white transition-colors"
+              className="whitespace-nowrap text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white transition-colors"
             >
               {translations.header.nav[i].label}
             </Link>
