@@ -7,6 +7,7 @@ import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { SiteHeader } from "@/components/SiteHeader";
 
 import { Card, IconChip, BrandIcon, SectionLabel, CardTitle, CardText } from "@/components/ui/Card";
+import { withBase } from "@/lib/basePath";
 
 type FeatureItem = {
   icon: string;
@@ -151,10 +152,10 @@ export default function Home() {
                 </div>
                 <div className={textLeft ? "airi-reveal-right" : "md:order-1 airi-reveal-left"}>
                   <Card variant="glass" className="overflow-hidden p-0">
-                    <a href={item.src} target="_blank" rel="noopener noreferrer" className="block bg-gray-100 dark:bg-zinc-800">
+                    <a href={withBase(item.src)} target="_blank" rel="noopener noreferrer" className="block bg-gray-100 dark:bg-zinc-800">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src={item.src}
+                        src={withBase(item.src)}
                         alt={item.alt}
                         loading="lazy"
                         className="w-full h-[26rem] object-contain transition-transform duration-300 hover:scale-[1.02]"

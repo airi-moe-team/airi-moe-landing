@@ -6,6 +6,7 @@ import { Link } from "@/components/Link";
 import { SiteHeader } from "@/components/SiteHeader";
 
 import { Card, IconChip, BrandIcon, CardTitle, CardText } from "@/components/ui/Card";
+import { withBase } from "@/lib/basePath";
 
 type FeatureItem = {
   icon: string;
@@ -62,10 +63,10 @@ export default function FeaturesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {translations.screenshots.items.map((item) => (
               <Card key={item.src} className="overflow-hidden p-0 hover:shadow-md hover:-translate-y-0.5 transition-all">
-                <a href={item.src} target="_blank" rel="noopener noreferrer" className="block bg-gray-100 dark:bg-zinc-800">
+                <a href={withBase(item.src)} target="_blank" rel="noopener noreferrer" className="block bg-gray-100 dark:bg-zinc-800">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={item.src}
+                    src={withBase(item.src)}
                     alt={item.alt}
                     loading="lazy"
                     className="w-full h-72 object-contain"

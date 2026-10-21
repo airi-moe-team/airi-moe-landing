@@ -4,6 +4,7 @@ import "./globals.css";
 import { LocaleProvider } from "@/components/LocaleProvider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Link } from "@/components/Link";
+import { withBase } from "@/lib/basePath";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
   title: "Airi",
   description: "Tu asistente conversacional inteligente",
   icons: {
-    icon: "/airi.png",
-    shortcut: "/airi.png",
-    apple: "/airi.png",
+    icon: withBase("/airi.png"),
+    shortcut: withBase("/airi.png"),
+    apple: withBase("/airi.png"),
   },
 };
 

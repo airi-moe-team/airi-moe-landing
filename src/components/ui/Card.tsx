@@ -1,4 +1,5 @@
 import React from "react";
+import { withBase } from "@/lib/basePath";
 
 /**
  * Sistema de tarjetas reutilizable de la landing Airi.
@@ -96,7 +97,7 @@ export function BrandIcon({
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={src}
+      src={withBase(src)}
       alt=""
       width={size}
       height={size}
