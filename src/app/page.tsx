@@ -46,7 +46,7 @@ export default function Home() {
               <div className="mb-6">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/airi.png"
+                  src={withBase("/airi.png")}
                   alt="Logo oficial de Airi"
                   width={140}
                   height={140}
@@ -70,7 +70,7 @@ export default function Home() {
               <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-700 bg-white/80 dark:bg-zinc-900/80 px-4 py-1.5">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/airi-icons/discord.svg"
+                  src={withBase("/airi-icons/discord.svg")}
                   alt=""
                   width={18}
                   height={18}
@@ -178,7 +178,7 @@ export default function Home() {
           </p>
           <Link href="/privacy" className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-full font-medium hover:opacity-80 transition-opacity shadow-lg shadow-black/20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/airi-icons/shield.svg" alt="" width={18} height={18} className="dark:invert" aria-hidden="true" />
+            <img src={withBase("/airi-icons/shield.svg")} alt="" width={18} height={18} className="dark:invert" aria-hidden="true" />
             {translations.privacyIntro.cta}
           </Link>
         </section>
@@ -210,7 +210,7 @@ export default function Home() {
           </p>
           <Link href="/features" className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-black text-white dark:bg-white dark:text-black rounded-full font-medium hover:opacity-80 transition-opacity shadow-lg shadow-black/20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/airi-icons/zap.svg" alt="" width={18} height={18} className="dark:invert" aria-hidden="true" />
+            <img src={withBase("/airi-icons/zap.svg")} alt="" width={18} height={18} className="dark:invert" aria-hidden="true" />
             {translations.hero.ctaPrimary}
           </Link>
         </section>

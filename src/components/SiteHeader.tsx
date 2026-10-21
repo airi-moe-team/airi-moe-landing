@@ -6,6 +6,7 @@ import { Link } from "@/components/Link";
 import { ThemeToggle } from "@/components/ThemeProvider";
 import type { Locale } from "@/lib/translations";
 import { BrandIcon } from "@/components/ui/Card";
+import { withBase } from "@/lib/basePath";
 
 /**
  * Header ( navbar ) reutilizable de la landing Airi.
@@ -30,7 +31,7 @@ export function SiteHeader({ className = "mb-8" }: { className?: string }) {
         <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/airi.png"
+            src={withBase("/airi.png")}
             alt="Airi"
             width={36}
             height={36}
@@ -54,7 +55,7 @@ export function SiteHeader({ className = "mb-8" }: { className?: string }) {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <label className="relative flex items-center">
-            <BrandIcon src="/airi-icons/earth.svg" size={16} className="absolute left-2.5 pointer-events-none" />
+            <BrandIcon src={withBase("/airi-icons/earth.svg")} size={16} className="absolute left-2.5 pointer-events-none" />
             <select
               className="bg-transparent border border-gray-300 dark:border-gray-600 rounded-md pl-8 pr-2 py-2 text-sm font-medium text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400 cursor-pointer"
               aria-label="Selección de idioma"

@@ -69,7 +69,7 @@ export default function RootLayout({
                 <div className="flex items-center gap-2">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/airi.png"
+                    src={withBase("/airi.png")}
                     alt="Airi"
                     width={28}
                     height={28}
@@ -80,7 +80,7 @@ export default function RootLayout({
                   </span>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src="/airi-icons/discord.svg"
+                    src={withBase("/airi-icons/discord.svg")}
                     alt="Discord"
                     width={16}
                     height={16}
