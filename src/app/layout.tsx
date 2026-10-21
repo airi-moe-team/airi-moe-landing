@@ -18,12 +18,31 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Airi",
-  description: "Tu asistente conversacional inteligente",
+  title: "Airi — Asistente conversacional en Discord",
+  description: "Conversaciones naturales, memoria persistente y relaciones que evolucionan. Bot de Discord con LLM local o API compatible.",
   icons: {
     icon: withBase("/airi.png"),
     shortcut: withBase("/airi.png"),
     apple: withBase("/airi.png"),
+  },
+  openGraph: {
+    title: "Airi — Asistente conversacional en Discord",
+    description: "Conversaciones naturales, memoria persistente y relaciones que evolucionan.",
+    url: "https://airi-moe-team.github.io/airi-moe-landing/",
+    siteName: "Airi",
+    images: [{ url: withBase("/airi.png") }],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "Airi — Asistente conversacional en Discord",
+    description: "Conversaciones naturales, memoria persistente y relaciones que evolucionan.",
+    images: [withBase("/airi.png")],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -62,7 +81,10 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-zinc-50 dark:bg-black text-black dark:text-white">
         <ThemeProvider>
           <LocaleProvider>
-            <main className="flex-1 flex flex-col">
+            <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-black focus:text-white focus:rounded-md">
+              Saltar al contenido
+            </a>
+            <main id="main-content" className="flex-1 flex flex-col">
               {children}
             </main>
             <footer className="relative z-10 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-zinc-900">

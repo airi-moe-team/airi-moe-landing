@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /
-Sitemap: https://airi.example.com/sitemap.xml
+Allow: /
+
+Sitemap: https://airi-moe-team.github.io/airi-moe-landing/sitemap.xml
